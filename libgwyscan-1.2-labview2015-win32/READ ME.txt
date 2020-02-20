@@ -1,0 +1,25 @@
+
+These routines are Labview VIs for the Gwyscan libaray. They are written in Labview 2015 and will not work with earlier versions of Labview. 
+Please install them in the User.lib folder associated with Labview. Normally this can be found 
+
+...\program files\National Instruments\Labview 2015\user.lib
+
+The help files associated with the VIs should have the same content as that for the original C routines that can be found at
+
+http://libgwyscan.sourceforge.net/
+
+Please note the the routines are used at your own risk and that the authors accept no responsibility for problems encountered when using these routines.
+
+Petr Klapetek 
+
+Andrew Yacoot
+
+
+19 August 2016
+20 Oct 2016
+
+Corrected bug in save Gwyddion arrays: control was not linked to terminal block
+Corrected bug: no input for Z data in save xyz arrays
+Tried with Gywscan 1.1 routines after memoray leak issue with Gywscan corrected.
+
+Andrew YAcoot 21 February 2017

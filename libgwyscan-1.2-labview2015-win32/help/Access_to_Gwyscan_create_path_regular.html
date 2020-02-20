@@ -1,0 +1,284 @@
+<HTML>
+<HEAD>
+<TITLE>Access to Gwyscan create path regular.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Access to Gwyscan create path regular.vi"></A><H2>Access to Gwyscan create path regular.vi</H2>
+<P>Creates a scan path for regular (equidistant) measurements consisting of a certain number  of equally spaced points in a matrix . Different regimes of scanning ( one directional and bi directional are supported)</P>
+<P></P>
+<P>The organisation of individual pixels is always the same, so the result can be directly used for a bitmap.</P>
+<P>the following data organisation is used (assuming a 4 x 4 measurment has been requested)</P>
+<P></P>
+<P>mode GWYSCAN_DIRECTION_FORWARD: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15</P>
+<P></P>
+<P>Function Returns 16</P>
+<P></P>
+<P>mode GWYSCAN_DIRECTION _REVERSE: 3 2 1 0 7 6 5 4 11 10 9 8 15 14 13 12</P>
+<P></P>
+<P>Function Returns 16</P>
+<P></P>
+<P>mode GWYSCAN_DIRECTION_BIDIRECTIONAL: 0 1 2 3 7 6 5 4 8 9 10 11 15 14 13 12</P>
+<P></P>
+<P>Function Returns 16 </P>
+<P>mode GWYSCAN_DIRECTION_BOTH  two arrays are taken, at each line both forward and reverse data are collected </P>
+<P>1 2 3  7 6 5 4</P>
+<P></P>
+<P>8 9 10 11 15 14 13 12</P>
+<P></P>
+<P>16 17 18 19 23 22 21 20</P>
+<P></P>
+<P>24 25 26 27 31 30 29 2</P>
+<P>Function returns 32</P>
+<P></P>
+<P>mode GWYSCAN_DIRECTION__FORWARD _REFINE: 0 1 2 3 12 13 14 15 8 9 10 11 4 5 6 7</P>
+<P>line order for 10 lines 0 9 4 2 6 7 5 3 1 8</P>
+<P></P>
+<P>mode GWYSCAN_DIRECTION_FORWARD_SKIP LINE ORDER: 0 1 2 3 8 9 10 11 4 5 6 7 12 13 14 15</P>
+<P>LINE ORDER FOR 10 LINES 0 2 4 6 8 1 3 5 7 </P>
+<P></P>
+<P>if NULL is passed for xypos the function calculates and returns the number of positions in the path n. This is the recommended way of finding out how large xypos needs to be . Note that each position has two coordinates so you must allocate xypos with 2n elements</P>
+<P><IMG SRC="Access_to_Gwyscan_create_path_regularc.png" ALT="Access to Gwyscan create path regular.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>error in (no error)</B> <P><B>error in</B> can accept error information wired from VIs previously called. Use this information to decide if any functionality should be bypassed in the event of errors from other VIs.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>Tab Control</B> </TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>Input parameters for regular scan</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>xreal</B> <P>the requested physical range of the scan in the x direction in metres</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>yreal</B> <P>the requested physical range of the scan in the y direction in metres</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>angle</B> <P>The requested angle of the scan</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>xres</B> <P>the requested x resolution of the scan</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>yres</B> <P>The requested y resolution of the scan</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>xoffset</B> <P>The requested offset of the scan in the x direction in metres</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>yoffset</B> <P>The requested offset of the scan direction in y in metres</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cu32.png" ALT="cu32"></P>
+</TD>
+<TD>
+<B>direction</B> <P>The requested scan method </P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ierrcodeclst.png" ALT="ierrcodeclst"></P>
+</TD>
+<TD>
+<B>error out</B> <P><B>error in</B> can accept error information wired from VIs previously called. Use this information to decide if any functionality should be bypassed in the event of errors from other VIs.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>function return</B> <P>inumber of set elements or number of elements to allocate if xypos is Null</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i1ddbl.png" ALT="i1ddbl"></P>
+</TD>
+<TD>
+<B>xypos OUT</B> </TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B></B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>size(s)</B> <P>Size of output array of (x,y) coordinates</P>
+</TD>
+</TR>
+</Table>
+</BODY>
+</HTML>

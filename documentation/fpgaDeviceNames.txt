@@ -1,0 +1,67 @@
+FPGA controller nomenclature
+
+Variables as
+
+component.[subcomponent.][iops.]element
+
+i: input
+o: output
+p: process
+s: status
+
+
+Registers and memory:
+
+component.element
+
+
+FIFOs
+
+component[-destinationComponent].scope.element
+
+Scopes:
+t:          Target scoped
+th2:        Target to Host
+h2t:        Host to target
+
+Available components:
+
+aio:        Analog in-output
+cls:        Closed-loop scan
+fb:         Feedback
+fb.mot      Manual feedback motion
+fb.loff     Lift-off system
+flt         Digital signal filtering
+flt.ss      Filter supersampling of input
+hdt:        Image data transfer to host computer
+hdt.ort     ORT data transfer
+hdt.aux     Auxiliary channel data transfer
+hsdc:       High-speed data capture, large volume raw input and corrected trace aquisition
+itc:        Inter-target communication
+lwr:        Local wave recording, aquire synchronously averaged cycle traces
+ort:        Off-resonance tapping
+ort.fit:    Real-time curve fitting
+ort.bgc:    Background correction
+smd:        Stepper motor drive
+se:         Scan engine
+se.mot:     Point target motion for scan enginese
+sid:        System identification
+
+
+
+FPGA target types:
+
+PXIE_7975R      Kintex7     flexRIO, hsFeedback 250MSps
+PXI_7954R       Virtex5     flexRIO, hsFeedback 100MSps
+PXI_7851R       Virtex5     scanEngine for HS setup 750kSps
+PXI_7842R       Virtex5     scanEngine for Hs setup 200kSps
+USB_7856R_OEM   Kintex7     All-in-one 1MSps
+
+IRQ numbers:
+
+IRQ Numbers:
+
+4: background ready
+5: interaction start
+6: HSDC ready
+7: lwr ready
