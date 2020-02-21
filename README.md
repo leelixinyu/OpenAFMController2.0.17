@@ -1,5 +1,6 @@
-# lbniAFMController-BetaVersionv2.0.16-20190611
+# OpenAFMController-BetaVersionv2.0.17
 Open Version with close-Loop, Simple Scan Engine
+20190611
 
 This is the README file for the Open AFM Controller provided to you by Charlène Brillard (Host & FPGA) and Adrian Nievergelt (FPGA) while they were working at Laboratory for Nano- and Bio- Instrumentation (EPFL, Lausanne, Switzerland).
 
@@ -18,6 +19,6 @@ It currently can run on at least three types of NI-FPGAs:
   
 On top of all the advantages to have access to an AFM Controller which we hope you will enjoy using as all the current users are, you will have the opportunity to add you own features to the code: for the first time, the FPGA code for an AFM is fully modifiable.
   
-Instructions on Labview Install to run the Code, how to setup your system, and how to use the software are made available on this github repository.
+Instructions on Labview (32bits, >=2016) install to run the Code, how to setup your system, and how to use the software are made available on this github repository.
 
 For any question, please contact cbrillard from github or by email if you can find my email address.
