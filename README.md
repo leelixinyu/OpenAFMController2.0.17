@@ -19,6 +19,6 @@ It currently can run on at least three types of NI-FPGAs:
   
 On top of all the advantages to have access to an AFM Controller which we hope you will enjoy using as all the current users are, you will have the opportunity to add you own features to the code: for the first time, the FPGA code for an AFM is fully modifiable.
   
-Instructions on Labview (32bits, >=2016) install to run the Code, how to setup your system, and how to use the software are made available on this github repository.
+Instructions on Labview (32bits, >=2016) install to run the Code, how to setup your system, and how to use the software are made available on this github repository and by contacting me directly. I would be happy to provide you support and explainations, which is how I usually proceed.
 
 For any question, please contact cbrillard from github or by email if you can find my email address.
