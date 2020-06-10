@@ -24,7 +24,9 @@ On top of all the advantages to have access to an AFM Controller which we hope y
 Instructions on Labview (32bits, >=2016) install to run the Code, how to setup your system, and how to use the software are made available on this github repository and by contacting me directly. I would be happy to provide you support and explainations, which is how I usually proceed.
 
 For any question, please contact cbrillard from github or by email if you can find my email address.
-Good luck and keep me posted,
+
+Good luck and keep me posted.
+
 Charlène Brillard
 
-PS: There may be some bugs in this first version posted on Github, don't hesitate to tell me!
+PS: There may be some bugs in this first version posted on Github, don't hesitate to tell me! I love feedback.
