@@ -1,6 +1,8 @@
 # OpenAFMController-BetaVersionv2.0.17
 Open Version with close-Loop, Simple Scan Engine
 20190611
+To cite this work : OpenAFMController with a link to the github Repository would be appreciated.
+For Non Commercial Use.
 
 This is the README file for the Open AFM Controller provided to you by Charlène Brillard (Host & FPGA) and Adrian Nievergelt (FPGA) while they were working at Laboratory for Nano- and Bio- Instrumentation (EPFL, Lausanne, Switzerland).
 
