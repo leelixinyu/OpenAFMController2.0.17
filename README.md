@@ -1,11 +1,21 @@
 # OpenAFMController-BetaVersionv2.0.17
+
+For Non Commercial Use
+
+Academic Licensing
+
 Open Version with close-Loop, Simple Scan Engine
+
 20190611
+
 To cite this work : OpenAFMController with a link to the github Repository would be appreciated.
+
 We published several articles using the software, so equally you can cite:
 Adrian Nievergelt et al. Large‐Range HS‐AFM Imaging of DNA Self‐Assembly through In Situ Data‐Driven Control, Small Methods, 3 (7), July 2019, 1900031 DOI: 10.1002/smtd.201900031
+
 Adrian Nievergelt et al., Photothermal Off-Resonance Tapping for Rapid and Gentle Atomic Force Imaging of Live Cells, International Journal of Molecular Sciences, 19(10):2984, 2018    DOI: 10.3390/ijms19102984
-For Non Commercial Use.
+
+
 
 This is the README file for the Open AFM Controller provided to you by Charlène Brillard (Host & FPGA) and Adrian Nievergelt (FPGA) while they were working at Laboratory for Nano- and Bio- Instrumentation (Fantner's lab, EPFL, Lausanne, Switzerland). We believe in Open Science and Open Hardware so that is the reason why we made this code available online.
 
