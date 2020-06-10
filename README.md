@@ -4,7 +4,7 @@ Open Version with close-Loop, Simple Scan Engine
 To cite this work : OpenAFMController with a link to the github Repository would be appreciated.
 For Non Commercial Use.
 
-This is the README file for the Open AFM Controller provided to you by Charlène Brillard (Host & FPGA) and Adrian Nievergelt (FPGA) while they were working at Laboratory for Nano- and Bio- Instrumentation (EPFL, Lausanne, Switzerland).
+This is the README file for the Open AFM Controller provided to you by Charlène Brillard (Host & FPGA) and Adrian Nievergelt (FPGA) while they were working at Laboratory for Nano- and Bio- Instrumentation (Fantner's lab, EPFL, Lausanne, Switzerland). We believe in Open Science and Open Hardware so that is the reason why we made this code available online.
 
 This project started with the need to find a way to implement a faster imaging mode for AFM, not provided by AFM companies.
 
@@ -24,3 +24,7 @@ On top of all the advantages to have access to an AFM Controller which we hope y
 Instructions on Labview (32bits, >=2016) install to run the Code, how to setup your system, and how to use the software are made available on this github repository and by contacting me directly. I would be happy to provide you support and explainations, which is how I usually proceed.
 
 For any question, please contact cbrillard from github or by email if you can find my email address.
+Good luck and keep me posted,
+Charlène Brillard
+
+PS: There may be some bugs in this first version posted on Github, don't hesitate to tell me!
